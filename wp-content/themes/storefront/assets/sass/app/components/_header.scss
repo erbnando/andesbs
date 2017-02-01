@@ -1,0 +1,25 @@
+header {
+	.site-title {
+		@media only screen and (max-width: 767px)  {
+			font-size: 1.75em!important;
+			padding: 5px 0;
+		}
+		@media only screen and (max-width: 479px)  {
+			font-size: 1.5em!important;
+			padding: 7px 0;
+		}
+	}
+	.site-branding {
+		width: auto!important;
+	}
+	#site-header-cart {
+		.mini_cart_item {
+			a {
+				img {
+					background-color: white;
+					padding: 2px;
+				}
+			}
+		}
+	}
+}

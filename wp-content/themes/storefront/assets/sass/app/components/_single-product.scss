@@ -1,0 +1,11 @@
+.single-product {
+	.woocommerce-tabs {
+		padding-top: 0;
+		.wc-tabs {
+			display: none;
+		}
+		.woocommerce-Tabs-panel {
+			width: 100%!important;
+		}			
+	}
+}
