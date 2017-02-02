@@ -50,9 +50,9 @@ ul.products li.product {
   .woocommerce .widget-area {
     float: left !important; } }
 
-.home #primary section {
+.page-template-template-homepage #primary section {
   text-align: center; }
-  .home #primary section .section-title {
+  .page-template-template-homepage #primary section .section-title {
     display: inline-block;
     position: relative;
     /*
@@ -65,24 +65,24 @@ ul.products li.product {
     	position: absolute;
     }
     */ }
-  .home #primary section:not(:last-child) {
+  .page-template-template-homepage #primary section:not(:last-child) {
     margin-bottom: 20px; }
-.home .hero {
+.page-template-template-homepage .hero {
   position: relative;
   height: 550px; }
-  .home .hero .hero-content {
+  .page-template-template-homepage .hero .hero-content {
     text-align: center;
     position: absolute;
     width: 100%;
     top: 50%;
     transform: translateY(-50%);
     z-index: 1; }
-    .home .hero .hero-content h1 {
+    .page-template-template-homepage .hero .hero-content h1 {
       color: white; }
       @media only screen and (max-width: 767px) {
-        .home .hero .hero-content h1 {
+        .page-template-template-homepage .hero .hero-content h1 {
           font-size: 2em; } }
-  .home .hero .hero-image {
+  .page-template-template-homepage .hero .hero-image {
     position: absolute;
     top: 0;
     width: 100vw;
@@ -93,12 +93,12 @@ ul.products li.product {
     background-size: cover;
     background-position: center center; }
     @media only screen and (max-width: 320px) {
-      .home .hero .hero-image {
+      .page-template-template-homepage .hero .hero-image {
         margin-left: -1.41575em;
         margin-right: -1.41575em;
         left: 0;
         width: 320px; } }
-.home section .section-title {
+.page-template-template-homepage section .section-title {
   background-color: #34495e;
   color: white;
   padding: 10px 30px 10px 30px;
@@ -107,10 +107,10 @@ ul.products li.product {
   height: 58px;
   margin-bottom: 66px; }
   @media only screen and (max-width: 767px) {
-    .home section .section-title {
+    .page-template-template-homepage section .section-title {
       font-size: 24px;
       line-height: 38px; } }
-  .home section .section-title:before {
+  .page-template-template-homepage section .section-title:before {
     content: '';
     position: absolute;
     width: 100vw;
@@ -118,7 +118,7 @@ ul.products li.product {
     right: 100%;
     background-color: #34495e;
     top: 0; }
-  .home section .section-title:after {
+  .page-template-template-homepage section .section-title:after {
     content: '';
     position: absolute;
     left: 100%;
