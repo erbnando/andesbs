@@ -50,6 +50,8 @@ ul.products li.product {
   .woocommerce .widget-area {
     float: left !important; } }
 
+.page-template-template-homepage .woocommerce-breadcrumb {
+  margin-bottom: 0; }
 .page-template-template-homepage #primary section {
   text-align: center; }
   .page-template-template-homepage #primary section .section-title {
