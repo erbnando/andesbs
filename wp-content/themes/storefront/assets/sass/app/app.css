@@ -53,7 +53,7 @@ ul.products li.product {
     float: left !important; } }
 
 .page-template-template-homepage .woocommerce-breadcrumb {
-  margin-bottom: 0; }
+  display: none; }
 .page-template-template-homepage #primary section {
   text-align: center; }
   .page-template-template-homepage #primary section .section-title {
