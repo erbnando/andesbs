@@ -52,6 +52,20 @@ ul.products li.product {
   .woocommerce .widget-area {
     float: left !important; } }
 
+.responsive-video-container {
+  margin: 40px 0; }
+  .responsive-video-container .wptuts-video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    height: 0;
+    overflow: hidden; }
+    .responsive-video-container .wptuts-video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+
 .page-template-template-homepage .woocommerce-breadcrumb {
   display: none; }
 .page-template-template-homepage #primary section {
