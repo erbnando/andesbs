@@ -54,6 +54,8 @@ ul.products li.product {
 
 .responsive-video-container {
   margin: 40px 0; }
+  .responsive-video-container:last-child {
+    margin-bottom: 0 !important; }
   .responsive-video-container .wptuts-video-container {
     position: relative;
     padding-bottom: 56.25%;
