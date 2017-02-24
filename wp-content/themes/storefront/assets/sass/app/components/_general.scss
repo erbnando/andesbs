@@ -87,3 +87,25 @@ ul.products {
 		}
 	}
 }
+
+table {
+    border-collapse: collapse;
+}
+
+table, td, th {
+    border: 1px solid #eee;
+}
+
+table th {
+	background-color: #f8f8f8;
+}
+
+table tbody td {
+	background-color: #fcfcfc;
+	padding: 10px;
+	min-width: 70px;
+}
+
+table tbody tr:nth-child(2n) td {
+	background-color: #f6f6f6;
+}
