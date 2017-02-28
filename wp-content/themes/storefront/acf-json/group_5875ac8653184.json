@@ -1,0 +1,47 @@
+{
+    "key": "group_5875ac8653184",
+    "title": "Product Categories",
+    "fields": [
+        {
+            "key": "field_5875ac921877b",
+            "label": "Homepage Order",
+            "name": "homepage_order",
+            "type": "number",
+            "instructions": "Lowest number is displayed first",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "min": "",
+            "max": "",
+            "step": "",
+            "readonly": 0,
+            "disabled": 0
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "taxonomy",
+                "operator": "==",
+                "value": "product_cat"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "normal",
+    "style": "default",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1488260432
+}

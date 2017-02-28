@@ -1,0 +1,30 @@
+.services {
+	.services-list {
+		h3:first-child {
+			margin-top: 0!important;
+		}
+		h3 {
+			margin-top: 35px;
+		}
+		td {
+			.service-name {
+				font-size: 16px;
+				display: block;
+				margin-bottom: 5px;
+			}
+			.service-description {
+				font-size: 13.33px;
+				p {
+					display: inline;
+				}
+			}
+			.service-cost {
+			}
+		}
+		td:last-child {
+			text-align: center;
+			min-width: 80px;
+			vertical-align: middle;
+		}
+	}
+}

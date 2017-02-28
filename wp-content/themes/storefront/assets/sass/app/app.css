@@ -79,7 +79,7 @@ table th {
 
 table tbody td {
   background-color: #fcfcfc;
-  padding: 10px;
+  padding: 15px;
   min-width: 70px; }
 
 table tbody tr:nth-child(2n) td {
@@ -272,5 +272,22 @@ header #site-header-cart .mini_cart_item a img {
     display: none; }
   .woocommerce .site-main > div:last-of-type .woocommerce-result-count {
     display: none; }
+
+.services .services-list h3:first-child {
+  margin-top: 0 !important; }
+.services .services-list h3 {
+  margin-top: 35px; }
+.services .services-list td .service-name {
+  font-size: 16px;
+  display: block;
+  margin-bottom: 5px; }
+.services .services-list td .service-description {
+  font-size: 13.33px; }
+  .services .services-list td .service-description p {
+    display: inline; }
+.services .services-list td:last-child {
+  text-align: center;
+  min-width: 80px;
+  vertical-align: middle; }
 
 /*# sourceMappingURL=app.css.map */
