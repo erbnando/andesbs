@@ -1,75 +1,108 @@
 <?php
 /**
- * The template for displaying 404 pages (not found).
+ * The template for displaying all pages.
+ *
+ * This is the template that displays all pages by default.
+ * Please note that this is the WordPress construct of pages
+ * and that other 'pages' on your WordPress site will use a
+ * different template.
  *
  * @package storefront
  */
 
 get_header(); ?>
 
-	<div id="primary" class="content-area">
+	<style type="text/css">
+		.site-search, #site-header-cart, #secondary, .widget_nav_menu, .woocommerce-breadcrumb, .storefront-primary-navigation, .storefront-handheld-footer-bar, .secondary-navigation {
+			display: none!important;;
+		}
+		header {
+			margin-bottom: 0!important;
+		}
+		@media screen and (max-width: 768px) {
+			.secondary-navigation {
+				float: left!important;
+			    clear: left;
+			    display: block;
+			}
+			.secondary-navigation ul {
+				list-style-type: none;
+				margin: 0;
+			}
+			.secondary-navigation ul li {
+				display: inline-block;
+				padding: 5px 10px 0;
+			}
+			.secondary-navigation ul li:first-child {
+				padding: 5px 10px 0 0!important;
+			}
+			.secondary-navigation ul li a {
+				font-weight: normal;
+				font-size: 14px;
+			}
+		}
+		div.site-title {
+			font-size: 2em!important;
+			padding-top: 5px;
+			padding-bottom: 5px;
+		}
+		#primary {
+			width: 100%;
+			float: none;
+			margin-right: 0;
+		}
+		main {
+			margin-top: 40px;
+			margin-bottom: 40px!important;
+			height: 400px;
+		}
+		*:focus {
+			outline: none!important;
+		}
+		hr {
+			margin-top: 50px;
+			margin-bottom: 30px;
+		}
+		.responsive-video-container {
+			max-width: 700px;
+		}
+		@media screen and (min-width: 1024px) {
+			.footer-widgets .widget {
+				width: 40%!important;
+			}
+		}
+		#map {
+		    height: 400px!important;
+		}
+		#about {
+			padding-top: 20px;
+		}
+		#services {
+			padding-top: 20px;			
+		}
+	</style>
+	<script type="text/javascript">
+		jQuery('a[href*=\\#]').on('click', function(event){     
+		    event.preventDefault();
+		    jQuery('html,body').animate({scrollTop:jQuery(this.hash).offset().top}, 500);
+		});		
+	</script>
 
+	<div id="primary" class="content-area">
 		<main id="main" class="site-main" role="main">
 
-			<div class="error-404 not-found">
+			<h2>
 
-				<div class="page-content">
+			Oops, whatever you were looking for was not found!
+			<br><br>
+			<a href="<?php echo site_url(); ?>">Here is a link to our homepage.</a>
 
-					<header class="page-header">
-						<h1 class="page-title"><?php esc_html_e( 'Oops! That page can&rsquo;t be found.', 'storefront' ); ?></h1>
-					</header><!-- .page-header -->
-
-					<p><?php esc_html_e( 'Nothing was found at this location. Try searching, or check out the links below.', 'storefront' ); ?></p>
-
-					<?php
-					echo '<section aria-label="Search">';
-
-					if ( storefront_is_woocommerce_activated() ) {
-						the_widget( 'WC_Widget_Product_Search' );
-					} else {
-						get_search_form();
-					}
-
-					echo '</section>';
-
-					if ( storefront_is_woocommerce_activated() ) {
-
-						echo '<div class="fourohfour-columns-2">';
-
-							echo '<section class="col-1" aria-label="Promoted Products">';
-
-								storefront_promoted_products();
-
-							echo '</section>';
-
-							echo '<nav class="col-2" aria-label="Product Categories">';
-
-							echo '<h2>' . esc_html__( 'Product Categories', 'storefront' ) . '</h2>';
-
-							the_widget( 'WC_Widget_Product_Categories', array(
-																			'count'		=> 1,
-							) );
-							echo '</nav>';
-
-							echo '</div>';
-
-							echo '<section aria-label="Popular Products" >';
-
-							echo '<h2>' . esc_html__( 'Popular Products', 'storefront' ) . '</h2>';
-
-							echo storefront_do_shortcode( 'best_selling_products', array(
-								'per_page'  => 4,
-								'columns'   => 4,
-							) );
-
-							echo '</section>';
-					}
-					?>
-
-				</div><!-- .page-content -->
-			</div><!-- .error-404 -->
+			</h2>
 
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_footer();
+<?php
+// do_action( 'storefront_sidebar' );
+get_sidebar('main');
+get_footer();
