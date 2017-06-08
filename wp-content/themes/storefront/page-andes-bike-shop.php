@@ -16,6 +16,9 @@ get_header(); ?>
 		.site-search, #site-header-cart, #secondary, .widget_nav_menu, .woocommerce-breadcrumb, .storefront-primary-navigation, .storefront-handheld-footer-bar {
 			display: none!important;;
 		}
+		header {
+			margin-bottom: 0!important;
+		}
 		.secondary-navigation {
 			float: right!important;
 		}
