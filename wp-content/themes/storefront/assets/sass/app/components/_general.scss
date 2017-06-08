@@ -93,6 +93,13 @@ ul.products {
 
 table {
     border-collapse: collapse;
+	tbody {
+		tr {
+			td:last-child {
+				width: 70px;
+			}
+		}
+	}
 }
 
 table, td, th {

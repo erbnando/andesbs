@@ -356,3 +356,6 @@ function wptuts_responsive_video_shortcode( $atts ) {
     return '<div class="responsive-video-container"><div class="wptuts-video-container"><iframe src="//www.youtube.com/embed/' . $id . '?controls=' . $controls . '&showinfo=' . $showinfo . '&rel=' . $rel . '&start=' . $start . '" height="240" width="320" allowfullscreen="" frameborder="0"></iframe></div></div>';
 }
 add_shortcode ('responsive-video', 'wptuts_responsive_video_shortcode' );
+
+add_filter('show_admin_bar', '__return_false');
+
