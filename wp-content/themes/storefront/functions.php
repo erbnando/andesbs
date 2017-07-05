@@ -359,3 +359,18 @@ add_shortcode ('responsive-video', 'wptuts_responsive_video_shortcode' );
 
 add_filter('show_admin_bar', '__return_false');
 
+add_filter( 'wp_nav_menu_items', 'social_links_sec_nav', 10, 2 );
+function social_links_sec_nav ( $items, $args ) {
+    if ($args->theme_location == 'secondary') {
+        $items .= '<li class="social social-first"><a target="_blank" href="' . get_field('facebook_url', 'option') . '"><i class="fa fa-facebook-square" aria-hidden="true"></i></a></li>
+        		   <li class="social"><a target="_blank" href="' . get_field('yelp_url', 'option') . '"><i class="fa fa-yelp" aria-hidden="true"></i></a></li>
+        		   <li class="social"><a target="_blank" href="' . get_field('google_url', 'option') . '"><i class="fa fa-google" aria-hidden="true"></i></a></li>';
+    }
+    return $items;
+}
+
+if( function_exists('acf_add_options_page') ) {
+	
+	acf_add_options_page();
+	
+}

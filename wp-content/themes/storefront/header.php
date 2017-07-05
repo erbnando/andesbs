@@ -38,6 +38,8 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
 	<header id="masthead" class="site-header" role="banner" style="<?php storefront_header_styles(); ?>">
 		<div class="col-full">
+			
+			<a href="<?php echo get_site_url(); ?>" class="logo"><img src="<?php echo get_template_directory_uri() . '/assets/images/logo.png'; ?>"></a>
 
 			<?php
 			/**

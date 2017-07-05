@@ -208,19 +208,49 @@ footer {
 ul.menu li.current-menu-item > a {
   color: white; }
 
-@media only screen and (max-width: 767px) {
-  header .site-title {
-    font-size: 1.75em !important;
-    padding: 5px 0; } }
-@media only screen and (max-width: 479px) {
-  header .site-title {
-    font-size: 1.5em !important;
-    padding: 7px 0; } }
-header .site-branding {
-  width: auto !important; }
-header #site-header-cart .mini_cart_item a img {
-  background-color: white;
-  padding: 2px; }
+header {
+  padding: 2em 0 !important; }
+  @media only screen and (max-width: 767px) {
+    header {
+      padding: 1.75em 0 !important; } }
+  @media only screen and (max-width: 767px) {
+    header .site-title {
+      font-size: 1.75em !important;
+      padding: 5px 0; } }
+  @media only screen and (max-width: 479px) {
+    header .site-title {
+      font-size: 1.5em !important;
+      padding: 7px 0; } }
+  header .site-branding {
+    width: auto !important; }
+  header #site-header-cart .mini_cart_item a img {
+    background-color: white;
+    padding: 2px; }
+  header .col-full .site-branding {
+    display: none; }
+  header .col-full .logo {
+    display: inline-block;
+    width: 200px;
+    vertical-align: bottom; }
+    @media only screen and (max-width: 767px) {
+      header .col-full .logo {
+        float: left; } }
+  header .col-full .secondary-navigation {
+    margin-bottom: 0;
+    margin-top: 87px; }
+    @media only screen and (max-width: 767px) {
+      header .col-full .secondary-navigation {
+        margin-top: 15px; } }
+    header .col-full .secondary-navigation ul li a {
+      padding-bottom: 5px;
+      vertical-align: bottom; }
+    header .col-full .secondary-navigation ul li.social-first {
+      padding-left: 10px; }
+    header .col-full .secondary-navigation ul .social {
+      padding: 0 5px; }
+      header .col-full .secondary-navigation ul .social a {
+        font-size: 16px;
+        padding: 0; }
 
 .widget-area .product_list_widget .amount {
   display: none; }
